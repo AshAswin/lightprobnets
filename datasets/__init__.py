@@ -1,7 +1,7 @@
-import cifar
-import flyingchairs
-import mnist
-import sintel
+from datasets import cifar
+from datasets import flyingchairs
+from datasets import mnist
+from datasets import sintel
 
 Cifar10Train = cifar.Cifar10Train
 Cifar10Valid = cifar.Cifar10Valid

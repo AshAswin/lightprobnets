@@ -1,7 +1,7 @@
-import classification_losses
-import endpoint_error
-import probabilistic_classification_losses
-import probabilistic_endpoint_error
+from losses import classification_losses
+from losses import endpoint_error
+from losses import probabilistic_classification_losses
+from losses import probabilistic_endpoint_error
 
 
 ClassificationLoss = classification_losses.ClassificationLoss

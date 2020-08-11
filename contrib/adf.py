@@ -149,7 +149,7 @@ class Conv2d(_ConvNd):
         dilation = _pair(dilation)
         super(Conv2d, self).__init__(
             in_channels, out_channels, kernel_size, stride, padding, dilation,
-            False, _pair(0), groups, bias)
+            False, _pair(0), groups, bias,padding_mode='zeros')
 
     def forward(self, inputs_mean, inputs_variance):
         outputs_mean = tf.conv2d(

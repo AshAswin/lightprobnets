@@ -123,7 +123,7 @@ class TqdmToLogger(tqdm.tqdm):
         while True:
             try:
                 logging.logbook(msg)
-            except IOError, e:
+            except IOError as e:
                 if e.errno != errno.EINTR:
                     raise ValueError("Logbook TQDM IOError")
                 else:

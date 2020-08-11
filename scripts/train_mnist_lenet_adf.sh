@@ -2,7 +2,7 @@
 
 # meta
 CHECKPOINT=None
-MNIST_HOME=/fastdata/mnist
+MNIST_HOME=../datasets/fastdata/mnist
 MODEL=LeNetADF
 PREFIX="train-mnist"
 TIME=$(date +"%Y%m%d-%H%M%S")
